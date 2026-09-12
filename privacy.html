@@ -46,8 +46,7 @@
             <li>Discord user IDs, usernames, display names and avatars</li>
             <li>Server membership and role information</li>
             <li>Information required to process commands</li>
-            <li>Message metadata</li>
-            <li>Message content where required for PingWarn</li>
+            <li>Message metadata and mention information where required for PingWarn</li>
             <li>Moderation information necessary to perform moderation commands</li>
         </ul>
 
@@ -63,20 +62,21 @@
         </p>
 
         <p>
-            Where message content is required for PingWarn, Comet processes
-            the message temporarily to determine whether a protected user
-            has been mentioned.
+            Comet does not request or use Discord's Message Content Intent.
+            PingWarn is designed to operate using mention information and
+            other necessary message metadata rather than reading the actual
+            text of Discord messages.
         </p>
 
         <p>
-            Message content is not intentionally saved to a permanent
-            database, archived for later use, sold, used for advertising
-            or profiling, or sent to unrelated external services.
+            Comet does not intentionally save, archive, sell, use for
+            advertising or profiling, or send Discord message content to
+            unrelated external services.
         </p>
 
         <p>
-            Once the relevant processing is complete, the message content
-            is discarded.
+            Because Message Content Intent is not enabled, Comet is not
+            designed to access the full text of ordinary Discord messages.
         </p>
 
 
@@ -88,7 +88,6 @@
 
         <ul>
             <li>The Discord ID of a protected user</li>
-            <li>Whether PingWarn is enabled</li>
             <li>The configured warning threshold</li>
             <li>A temporary mention count</li>
             <li>Timestamps required for the configured decay period</li>
@@ -99,23 +98,23 @@
             is no longer required.
         </p>
 
-       <p>
-           Expired PingWarn counters are reset rather than retained as historical
-           records.
-       </p>
+        <p>
+            Expired PingWarn counters are reset rather than retained as
+            historical records.
+        </p>
 
-        
-         <p>
-    When a PingWarn threshold results in a formal warning, Comet may
-    create a limited moderation record in the server's designated private
-    Staff Hub moderation Forum if one is made. This record may contain information such as
-    the pinger, protected user, ping count, server, channel and action taken.
-         </p>
+        <p>
+            When a PingWarn threshold results in a formal warning, Comet may
+            create a limited moderation record in the server's designated
+            private Staff Hub moderation Forum if one is configured. This
+            record may contain information such as the pinger, protected
+            user, ping count, server, channel and action taken.
+        </p>
 
-<p>
-    The original message content is not included in the PingWarn moderation
-    record.
-</p>
+        <p>
+            The original message content is not included in the PingWarn
+            moderation record.
+        </p>
 
 
         <h2>4. Moderation Data</h2>
