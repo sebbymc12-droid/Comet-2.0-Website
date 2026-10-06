@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -166,6 +167,7 @@
       }
     }
   </style>
+
 </head>
 
 <body>
@@ -174,267 +176,295 @@
     <div class="nav">
       <a class="logo" href="/">Comet 2.0</a>
 
-      <nav>
-        <a href="/">Home</a>
-        <a href="/privacy.html" class="active">Privacy</a>
-        <a href="/terms.html">Terms</a>
-      </nav>
-    </div>
+```
+  <nav>
+    <a href="/">Home</a>
+    <a href="/privacy.html" class="active">Privacy</a>
+    <a href="/terms.html">Terms</a>
+  </nav>
+</div>
+```
+
   </header>
 
   <main>
 
-    <div class="hero">
-      <h1>Comet 2.0 Privacy</h1>
-      <p class="updated">Last updated: 18 September 2026</p>
-    </div>
+```
+<div class="hero">
+  <h1>Comet 2.0 Privacy</h1>
+  <p class="updated">Last updated: 6 October 2026</p>
+</div>
 
-    <section>
-      <h2>1. TL;DR</h2>
+<section>
+  <h2>1. TL;DR</h2>
 
-      <p>
-        Comet 2.0 is a personal Discord bot and passion project created
-        and maintained by <strong>@comet_saturn</strong>.
-      </p>
+  <p>
+    Comet 2.0 is a personal Discord bot and passion project created
+    and maintained by <strong>@comet_saturn</strong>.
+  </p>
 
-      <p>
-        Comet is currently used for a single Discord community and is
-        provided free of charge. It is not intended to be a commercial
-        service.
-      </p>
+  <p>
+    Comet is provided free of charge and is primarily intended to
+    provide fun, games, and lightweight entertainment features on
+    Discord.
+  </p>
 
-      <p>
-        Comet only processes information that it needs to provide its
-        features. It is designed to keep as little information as
-        reasonably possible and does not intentionally build a permanent
-        database of users, messages, or normal activity.
-      </p>
-    </section>
+  <p>
+    Comet is designed around data minimisation. It does not
+    intentionally maintain a permanent database of users, messages,
+    or normal command activity.
+  </p>
+</section>
 
-    <section>
-      <h2>2. What Comet May Process</h2>
+<section>
+  <h2>2. What Comet May Process</h2>
 
-      <p>
-        Because Comet operates through the Discord API, Discord may provide
-        Comet with information needed for the bot to function.
-      </p>
+  <p>
+    Comet operates through the Discord API. Discord may provide Comet
+    with information required for the bot to function.
+  </p>
 
-      <p>
-        Depending on which features are being used, this may include:
-      </p>
+  <p>
+    Depending on how Comet is being used, this may include:
+  </p>
 
-      <ul>
-        <li>Discord user IDs, usernames, and display information</li>
-        <li>Server, channel, and role information</li>
-        <li>Message content when required for enabled features</li>
-        <li>Command options, arguments, and other command input</li>
-        <li>Information required to perform moderation actions</li>
-        <li>Temporary information required for features such as PingWarn and cooldowns</li>
-        <li>Other Discord-provided information reasonably necessary for an enabled feature</li>
-      </ul>
+  <ul>
+    <li>Discord user IDs, usernames, and display information</li>
+    <li>Server and channel information</li>
+    <li>Command names and command options</li>
+    <li>Information provided directly as part of a command</li>
+    <li>Information temporarily required to operate an active game</li>
+    <li>Other Discord-provided information reasonably necessary for an enabled feature</li>
+  </ul>
 
-      <p>
-        The exact information used can vary depending on the features
-        enabled in the community.
-      </p>
-    </section>
+  <p>
+    Comet's current command set consists primarily of fun, random,
+    game, and entertainment commands. The exact information available
+    to Comet depends on the Discord feature being used.
+  </p>
+</section>
 
-    <section>
-      <h2>3. Why Comet Uses This Information</h2>
+<section>
+  <h2>3. Why Comet Uses This Information</h2>
 
-      <p>
-        Information is used to provide Comet's Discord features and respond
-        to users.
-      </p>
+  <p>
+    Information is processed only as reasonably necessary to provide
+    Comet's features and respond to users.
+  </p>
 
-      <p>
-        This can include things such as:
-      </p>
+  <p>
+    This can include:
+  </p>
 
-      <ul>
-        <li>Processing commands and sending responses</li>
-        <li>Running fun, game, and utility commands</li>
-        <li>Running SSU and announcement features</li>
-        <li>Providing moderation tools</li>
-        <li>Running PingWarn and similar server features</li>
-        <li>Checking permissions before allowing certain actions</li>
-        <li>Performing actions requested through authorised commands</li>
-      </ul>
+  <ul>
+    <li>Processing slash commands</li>
+    <li>Sending command responses</li>
+    <li>Running games such as Tic-Tac-Toe and Connect 4</li>
+    <li>Generating random or entertainment responses</li>
+    <li>Checking information required to operate a command</li>
+    <li>Maintaining temporary state while a feature is active</li>
+  </ul>
 
-      <p>
-        Comet does not intentionally use this information for advertising,
-        profiling, analytics, or unrelated purposes.
-      </p>
-    </section>
+  <p>
+    Comet does not intentionally use this information for advertising,
+    behavioural profiling, or unrelated purposes.
+  </p>
+</section>
 
-    <section>
-      <h2>4. Message Content and Prefix Commands</h2>
+<section>
+  <h2>4. Messages and Command Input</h2>
 
-      <p>
-        Comet supports prefix commands beginning with <code>c!</code>.
-        Message Content is also required for certain enabled features,
-        such as PingWarn.
-      </p>
+  <p>
+    Comet primarily uses Discord application commands, such as slash
+    commands, but also supports prefix commands beginning with
+    <code>c!</code>.
+  </p>
 
-      <p>
-        When necessary, Comet temporarily reads message content so it can
-        identify and process the relevant command or feature.
-      </p>
+  <p>
+    When prefix commands are enabled, Comet may temporarily read message
+    content in order to identify and process commands beginning with
+    <code>c!</code>.
+  </p>
 
-      <p>
-        Comet does not intentionally maintain a permanent history of
-        normal messages, prefix commands, or general message activity.
-      </p>
-    </section>
+  <p>
+    Comet may also receive message information required for features such
+    as games, command responses, and message-related functionality.
+  </p>
 
-    <section>
-      <h2>5. Storage</h2>
+  <p>
+    Comet does not intentionally maintain a permanent history of normal
+    Discord messages, prefix commands, or general message activity.
+  </p>
+</section>
 
-      <p>
-        Comet is designed around minimal storage.
-      </p>
+<section>
+  <h2>5. Games and Temporary Data</h2>
 
-      <p>
-        Comet does not intentionally maintain a permanent database of
-        users, messages, normal command usage, or general member activity.
-      </p>
+  <p>
+    Some Comet commands require temporary information to remain in
+    memory while a feature is being used.
+  </p>
 
-      <p>
-        Some features may temporarily keep information in Comet's memory
-        while they are operating. For example, PingWarn may temporarily
-        keep settings and ping counts, while commands may temporarily keep
-        cooldown information.
-      </p>
+  <p>
+    For example, games such as Tic-Tac-Toe and Connect 4 may
+    temporarily keep information such as the participating users,
+    board state, and the current game status.
+  </p>
 
-      <p>
-        Temporary information is removed when it is no longer needed or
-        when Comet restarts. These temporary features are not intended to
-        become permanent activity records.
-      </p>
+  <p>
+    This information exists to operate the active game and is not
+    intended to form a permanent player database or activity history.
+  </p>
 
-      <p>
-        Comet's own configuration and credentials may be stored securely
-        on the system running the bot. These are configuration details
-        rather than a database of user activity.
-      </p>
-    </section>
+  <p>
+    Temporary in-memory information may be lost when a game ends or
+    when Comet restarts.
+  </p>
+</section>
 
-    <section>
-      <h2>6. Moderation</h2>
+<section>
+  <h2>6. Storage</h2>
 
-      <p>
-        When authorised moderation features are used, Comet processes the
-        information required to carry out the requested moderation action.
-      </p>
+  <p>
+    Comet is designed around minimal storage.
+  </p>
 
-      <p>
-        Where the server uses a designated Discord channel or forum for
-        moderation records, information about moderation actions may be
-        posted there for staff to review.
-      </p>
+  <p>
+    Comet does not intentionally maintain a permanent database of
+    users, messages, normal command usage, or general member activity.
+  </p>
 
-      <p>
-        These moderation records are intentional Discord server records
-        and may remain there according to the community's moderation
-        practices.
-      </p>
+  <p>
+    Temporary information may exist in Comet's memory while commands
+    or games are being processed. This information is not intended
+    to be retained as a permanent user record.
+  </p>
 
-      <p>
-        Comet does not maintain a separate permanent moderation database
-        for this purpose.
-      </p>
-    </section>
+  <p>
+    Comet's configuration and bot credentials may be stored securely
+    on the system running the bot. These are operational configuration
+    details and are not a database of user activity.
+  </p>
+</section>
 
-    <section>
-      <h2>7. What Comet Does Not Intentionally Do</h2>
+<section>
+  <h2>7. What Comet Does Not Intentionally Do</h2>
 
-      <ul>
-        <li>Sell user information</li>
-        <li>Use user information for advertising</li>
-        <li>Build a permanent general-purpose member database</li>
-        <li>Keep a permanent history of normal command usage</li>
-        <li>Track users across unrelated services</li>
-        <li>Collect information from unrelated websites for profiling</li>
-        <li>Store information that is not needed for a Comet feature</li>
-      </ul>
+  <ul>
+    <li>Sell user information</li>
+    <li>Use user information for advertising</li>
+    <li>Build a permanent general-purpose member database</li>
+    <li>Maintain a permanent history of normal command usage</li>
+    <li>Track users across unrelated services</li>
+    <li>Profile users for advertising or behavioural purposes</li>
+    <li>Collect information that is not reasonably needed for a Comet feature</li>
+  </ul>
 
-      <p>
-        Comet is intended to process the minimum information reasonably
-        needed for the features it provides.
-      </p>
-    </section>
+  <p>
+    Comet is intended to process the minimum information reasonably
+    necessary for the features it provides.
+  </p>
+</section>
 
-    <section>
-      <h2>8. Discord and the Discord API</h2>
+<section>
+  <h2>8. Discord and the Discord API</h2>
 
-      <p>
-        Comet operates through Discord and the Discord API. Information
-        provided to Comet through Discord is processed by Comet only as
-        needed for its features.
-      </p>
+  <p>
+    Comet operates through Discord and the Discord API. Information
+    provided to Comet through Discord is processed only as needed
+    for Comet's features.
+  </p>
 
-      <p>
-        Discord independently processes information as part of providing
-        the Discord platform. Comet does not control or determine
-        Discord's independent processing of information.
-      </p>
+  <p>
+    Discord independently processes information as part of providing
+    the Discord platform. Comet does not control Discord's independent
+    processing of information.
+  </p>
 
-      <p>
-        For more information about Discord's own processing and privacy
-        practices, see:
-      </p>
+  <p>
+    For more information about Discord's own privacy practices, see:
+  </p>
 
-      <p>
-        <a
-          href="https://discord.com/privacy"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Discord Privacy Policy
-        </a>
-      </p>
-    </section>
+  <p>
+    <a
+      href="https://discord.com/privacy"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Discord Privacy Policy
+    </a>
+  </p>
+</section>
 
-    <section>
-      <h2>9. Security</h2>
+<section>
+  <h2>9. Security</h2>
 
-      <p>
-        Reasonable measures are used to protect Comet's configuration
-        and credentials from unauthorised access.
-      </p>
+  <p>
+    Reasonable measures are used to protect Comet's configuration
+    and bot credentials from unauthorised access.
+  </p>
 
-      <p>
-        Comet's bot credentials are kept private and are not intentionally
-        shared with other users.
-      </p>
-    </section>
+  <p>
+    Comet's bot credentials are kept private and are not intentionally
+    shared with other users.
+  </p>
 
-    <section>
-      <h2>10. Changes to Comet</h2>
+  <p>
+    No method of transmitting or storing information can be guaranteed
+    to be completely secure. Comet is a small personal project and
+    is operated with reasonable security measures appropriate to its
+    limited scope.
+  </p>
+</section>
 
-      <p>
-        Comet may gain, lose, or change commands and features over time.
-        Individual commands do not normally require this privacy notice
-        to be updated when they continue to process information in the
-        ways described above.
-      </p>
+<section>
+  <h2>10. Data Requests</h2>
 
-      <p>
-        This notice will be reviewed and updated if Comet introduces a
-        genuinely different type of data collection, storage, sharing,
-        or use that is not reasonably covered by this notice.
-      </p>
-    </section>
+  <p>
+    Because Comet does not intentionally maintain a permanent
+    general-purpose database of users or normal command activity,
+    there may be no persistent user data for Comet to retrieve,
+    correct, or delete.
+  </p>
 
-    <section>
-      <h2>11. Questions</h2>
+  <p>
+    If you believe Comet is retaining information about you or you
+    have a question about a particular feature, you can contact
+    the person maintaining Comet through the Discord community where
+    Comet is used.
+  </p>
+</section>
 
-      <p>
-        If you have a question about Comet's data handling or how a
-        particular feature works, you can contact the person maintaining
-        Comet through the Discord community where Comet is used.
-      </p>
-    </section>
+<section>
+  <h2>11. Changes to Comet</h2>
+
+  <p>
+    Comet may gain, lose, or change commands and features over time.
+  </p>
+
+  <p>
+    This privacy notice will be reviewed and updated when Comet
+    introduces a materially different type of data collection,
+    storage, sharing, or use that is not reasonably covered by this
+    notice.
+  </p>
+
+  <p>
+    The date at the top of this page indicates when this notice was
+    most recently updated.
+  </p>
+</section>
+
+<section>
+  <h2>12. Questions</h2>
+
+  <p>
+    If you have a question about Comet's data handling or how a
+    particular feature works, you can contact the person maintaining
+    Comet through the Discord community where Comet is used.
+  </p>
+</section>
+```
 
   </main>
 
